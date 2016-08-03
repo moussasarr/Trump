@@ -48,3 +48,12 @@ group :development do
   gem 'spring'
 end
 
+
+
+
+group :production do
+  gem 'unicorn'
+  gem 'pg'
+end
+
+
