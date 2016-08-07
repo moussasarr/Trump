@@ -33,7 +33,7 @@ input.body {
     height: 400px;
     width: 100%;
     z-index: -1;
-    background-image: url("trump_family.png");
+    background-image: url("/static/backround.png");
     position: fixed;
     top: 50%;
     left: 0%;
