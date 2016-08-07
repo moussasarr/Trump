@@ -22,12 +22,22 @@ input.body {
 }
 
 
-.gold{
+.gold {
 	color: #DAA520;
 }
 
 
-body{
-background: "trump.svg.png"
-}
 
+.centerImg{
+
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    background-image: url("Trump_2016.svg.png");
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    margin-top: -100px;
+    margin-left: 0px;
+
+}

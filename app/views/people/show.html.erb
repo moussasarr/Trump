@@ -1,8 +1,6 @@
-
-<p>
- <h4><center>Welcome <strong id="name"><%= @person.name %></strong></center></h4>
-
-</p>
+<div class="row">
+  <div class= "columns large-6">
+<%= image_tag("trump.gif", size: "600x600", :id => "image1") %>
 <%= audio_tag("welcome.m4a", autoplay: true, controls: false, class: "myAudio1") %>
 <%= audio_tag("bowel.m4a", autoplay: false, controls: false, class: "myAudio2") %>
 <%= audio_tag("schoolgirl.m4a", autoplay: false, controls: false, class: "myAudio3") %>
@@ -34,906 +32,541 @@
 <%= audio_tag("looking.m4a", autoplay: false, controls: false, class: "myAudio29") %>
 <%= audio_tag("hellen.m4a", autoplay: false, controls: false, class: "myAudio30") %>
 
- <center><%= image_tag("trump_family.png", size: "800x800") %></center>
+</div>
+
+<div class="columns large-6">
+ <h3 class="gold">
+  <center>WANT TO KNOW WHAT TRUMP THINKS OF YOU?</center></h3>
+
+   <center><button id="try_again" class="button" type="button" name="button">Try Again </button></center>
+ 
+</div>
+</div>
+<div class="centerImg">
+</div>
+
  <p id="nametag" data-name="<%= @person.name %>"></p>
+ 
 
 
- <script type="text/javascript">
-
- setTimeout(
- 	function(){ 
- 		// Play audio
-    document.getElementsByTagName("audio")[1].play();
- 		function nameFunction(){
-         // Text-to -speech function
-         //
- 		}
-              setTimeout(
-       function(){ 
-    // Play audio
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 2000); 
-
- 		// Second setTimeout
-  setTimeout(
- 	function(){ 
- 		// Play audio
-        document.getElementsByTagName("audio")[2].play();
-      setTimeout(
-       function(){ 
-    // Play audio
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 6000); 
 
- 		// Third setTimeout
-       setTimeout(
- 	     function(){ 
- 		// Play audio
-        document.getElementsByTagName("audio")[3].play();
- 		
 
-             setTimeout(
-       function(){ 
-    // Play audio
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout       
- }, 4000); 
- 		// Fourth setTimeout        
- }, 10000);       
- }, 5000);        
- }, 5000); 
 
+<script type="text/javascript">
 
+var myRandomNumber = Math.floor(Math.random() * 24);
+var array_of_functions = [
+    playJoke1,
+    playJoke2,
+    playJoke3,
+    playJoke4,
+    playJoke5,
+    playJoke6,
+    playJoke7,
+    playJoke8,
+    playJoke9,
+    playJoke10,
+    playJoke11,
+    playJoke12,
+    playJoke13,
+    playJoke14,
+    playJoke15,
+    playJoke16,
+    playJoke17,
+    playJoke18,
+    playJoke19,
+    playJoke20,
+    playJoke21, 
+    playJoke22,
+    playJoke23,
+    playJoke24,
+    playJoke25
+];
 
 
+//array_of_functions[myRandomNumber]();
 
-// Second phase 
+array_of_functions[24]();
 
-  setTimeout(
-       function(){ 
-    // Play audio
-      document.getElementsByTagName("audio")[4].play();
-     
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout   
-      setTimeout(
-       function(){ 
-    // Play audio
-      document.getElementsByTagName("audio")[5].play();
-     
-        setTimeout(
-       function(){ 
-    
-      responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-     
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout       
- }, 5000); 
 
 
 
+function playJoke1(){
+setTimeout(function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[1].play();
+}, 3000);
 
+setTimeout(function(){ 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 4500);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout  
 
-  setTimeout(
-       function(){ 
-      document.getElementsByTagName("audio")[6].play();
-      
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout
-     
+setTimeout(function(){ 
+ $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 6500);
 
-     setTimeout(
-       function(){
-      responsiveVoice.speak(document.getElementById("nametag").dataset.name); 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout 
 
-   
-     setTimeout(
-       function(){
-      document.getElementsByTagName("audio")[7].play();
+}
 
 
-      setTimeout(
-       function(){ 
-    // Play audio
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-    
+function playJoke2(){
+setTimeout(function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[2].play();
+}, 3000);
 
-    
-      setTimeout(
-       function(){ 
-    // Play audio
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name);
+setTimeout(function(){ 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");}, 9000);
 
+setTimeout(function(){ 
+ $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 10500);
 
-   setTimeout(
-       function(){ 
-    // Play audio
-  document.getElementsByTagName("audio")[8].play();
+}
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
- }, 1000); 
 
+function playJoke3(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[3].play();
+}, 3000);
+setTimeout(  function(){ 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 7000);
 
+setTimeout(function(){ 
+ $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 7000);
 
 
 
+setTimeout(  function(){ 
+ $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+  document.getElementsByTagName("audio")[4].play();
+}, 9000);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
- }, 5000); 
 
+setTimeout(function(){ 
+ $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 11000);
 
+}
 
 
 
+function playJoke4(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[5].play();
+}, 3000);
+setTimeout(  function(){ 
 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
+}, 7000);
 
-    // Sixth setTimeout       
- }, 6000); 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 8000);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing
-    // Sixth setTimeout 
-      
+}
 
-          
- }, 3000); 
 
+function playJoke5(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[6].play();
+}, 3000);
+setTimeout(  function(){ 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 5000);
 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 6000);
 
+}
 
+function playJoke6(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[7].play();
+}, 3000);
+setTimeout(  function(){ 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 7000);
 
 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 8000);
 
+}
 
 
 
 
- }, 3000); 
+function playJoke7(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[8].play();
+}, 7000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 10000);
+}
 
 
 
- }, 8000); 
+function playJoke8(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[9].play();
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
 
+}, 6000);
+}
 
 
 
+function playJoke9(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[10].play();
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
+}, 6000);
+}
 
- }, 5000); 
 
+function playJoke10(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 3000);
 
- }, 26000); 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[11].play();
+}, 6000);
 
 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
+}, 10000);
 
 
+}
 
 
-// Third Round 
+function playJoke11(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[12].play();
+}, 3000);
+setTimeout(  function(){ 
 
-   setTimeout(
-       function(){ 
-    // Play audio
-  document.getElementsByTagName("audio")[9].play();
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 7000);
+}
 
 
-  setTimeout(
-       function(){ 
-    // Play audio
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s");
+function playJoke12(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[13].play();
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 5000);
+}
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
- }, 4000); 
+function playJoke13(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[14].play();
+}, 5000);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-    // Sixth setTimeout       
- }, 62000); 
+}, 8000);
 
+}
 
 
+function playJoke14(){
+setTimeout(  function(){ 
 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[15].play();
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 4000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[16].play();
+}, 8000);
 
-  setTimeout(
-       function(){ 
-    // Play audio
-   document.getElementsByTagName("audio")[10].play();
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 13000);
+}
 
-    // Sixth setTimeout       
 
-    setTimeout(
-       function(){ 
-    // Play audio
-    responsiveVoice.speak(document.getElementById("nametag").dataset.name);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+function playJoke15(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[17].play();
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 6000);
+}
 
-    // Sixth setTimeout       
 
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+function playJoke16(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[18].play();
+}, 5000);
 
-    // Sixth setTimeout       
- }, 3000); 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 8000);
 
-    // Sixth setTimeout       
- }, 68000); 
+}
 
 
- setTimeout(
-       function(){ 
-    // Play audio
-    responsiveVoice.speak(document.getElementById("nametag").dataset.name);
+function playJoke17(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[19].play();
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+}, 9000);
+}
 
-    // Sixth setTimeout       
 
-     setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[11].play();
+function playJoke18(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[20].play();
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 3000);
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
+}, 6000);
 
-    // Sixth setTimeout       
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[21].play();
 
+}, 8000);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[21].play();
 
-    // Sixth setTimeout       
- }, 1000); 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 10000);
 
-    // Sixth setTimeout       
- }, 75000); 
 
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
+}, 13000);
 
-     setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[12].play();
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
+}
 
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+function playJoke19(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
 
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 3000);
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+  document.getElementsByTagName("audio")[22].play();
 
-    // Sixth setTimeout       
- }, 83000); 
+}, 6000);
 
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
 
- setTimeout(
-       function(){ 
-    // Play audio
-    responsiveVoice.speak(document.getElementById("nametag").dataset.name);
+}, 8000);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
 
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}
 
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
- }, 88000); 
 
 
 
- setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[13].play();
+function playJoke20(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[24].play();
+}, 3000);
+setTimeout(  function(){ 
+   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+  responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 14000);
+}
 
-    // Sixth setTimeout       
 
+function playJoke21(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+document.getElementsByTagName("audio")[25].play();
+}, 3000);
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+  responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 5000);
 
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
+  document.getElementsByTagName("audio")[26].play();
+}, 7000);
 
-    // Sixth setTimeout       
- }, 95000); 
 
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
+}, 11000);
 
-setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}
 
-    // Sixth setTimeout       
 
+function playJoke22(){
+setTimeout(  function(){
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
+document.getElementsByTagName("audio")[27].play();
+}, 3000);
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+  responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 9000);
+}
 
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
- }, 98000); 
+function playJoke23(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
+document.getElementsByTagName("audio")[28].play();
+}, 3000);
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+  responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
+}, 5000);
 
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
+  document.getElementsByTagName("audio")[14].play();
+}, 8000);
 
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 10000);
 
+}
 
-setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
+function playJoke24(){
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
+document.getElementsByTagName("audio")[29].play();
+}, 3000);
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+  responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+}, 5000);
+}
 
-    // Sixth setTimeout       
 
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+function playJoke25(){
+setTimeout(  function(){ 
+ $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-    // Sixth setTimeout       
- }, 102000); 
+}, 3000);
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
+  document.getElementsByTagName("audio")[23].play();
 
+}, 6000);
 
 
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" ); 
+  
 
- setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[14].play();
+}, 9000);
+}
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
 
 
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
 
-    // Sixth setTimeout       
- }, 103000); 
+// Btn event listener
+$(document).on("click","#try_again",function(){
+  var myRandomNumber2 = Math.floor(Math.random() * 24);
+  array_of_functions[myRandomNumber2]();
+});
 
 
-
-
-
-
-
-
-
-  setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[15].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 106000);
-
-
-  setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 107000); 
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[16].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 108000); 
-
-
-
-
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[17].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 115000); 
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 119000);
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[19].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 122000); 
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 129000);
-
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[20].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 133000); 
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s");
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 136000);
-
-
-  setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[21].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 137000); 
-
-
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s");
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 143000);
-
-
-
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[22].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 144000); 
-
-
-
-
-
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 149000);
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[23].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 150000); 
-
-
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-      document.getElementsByTagName("audio")[24].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 157000); 
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 169000);
-
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-     document.getElementsByTagName("audio")[25].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 173000);
-
-
-  setTimeout(
-       function(){ 
-    // Play audio
-     responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s");
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 176000);
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[26].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 177000);
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[27].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 182000);
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-    responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 189000);
-
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-    document.getElementsByTagName("audio")[29].play();
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 193000);
-
-
-
- setTimeout(
-       function(){ 
-    // Play audio
-    responsiveVoice.speak(document.getElementById("nametag").dataset.name);
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-
-
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
-    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
-
-    // Sixth setTimeout       
- }, 196000);
 
 
 

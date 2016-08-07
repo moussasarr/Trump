@@ -1,47 +1,39 @@
 
-
-
 <div class="row">
-
-
-
-	<div class= "columns small-6">
-
-    <%= image_tag("trump_final.jpg", size: "800x800") %>
+	<div class= "columns large-6">
+   <%= image_tag("trump.gif", size: "800x800", :id => "image0") %>
    <%= audio_tag("welcome.m4a", autoplay: true, controls: false) %>
+</div>
+
+<div class="columns large-6">
+ <h3 class="gold">
+  <center>WANT TO KNOW WHAT TRUMP THINKS OF YOU?</center></h3>
+<%= render 'form' %>
+</div>
+
 
 </div>
 
 
-
-  <div class="columns small-6">
-  	<br>
-  	<br>
-  	<br>
-  	<br>
-  	<br>
-  	<br>
-  	<br>
- 
-
-
-     <br>
-  
-  
-  	<h3 class="gold"><center>WANT TO KNOW WHAT TRUMP THINKS OF YOU?</center></h4>
-     
-    
-
-         <%= render 'form' %>
-
-         <br>
-         <br>
+<div class="centerImg">
+</div>
 
 
 
-         <h2 class="gold"> <center><bold>MAKE AMERICA GRATE AGAIN </bold></center></h4>
-      </div>
-  
 
-  </div>
+<script>
+  setTimeout(
+  function(){ 
 
+    $('#image0').attr( "src" , "<%= image_path "trump_final.png", :id => "image0" %>" );
+
+    // Play audio
+    //document.getElementById("staticImg").src = "trump.png"
+    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+    // Sixth setTimeout       
+    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+    // Sixth setTimeout       
+    //nameFunction(); should be called in syncronisation with (or at the end of audio1 playing)
+    // Sixth setTimeout       
+ }, 2500);
+</script>
