@@ -33,7 +33,7 @@ input.body {
     height: 400px;
     width: 100%;
     z-index: -1;
-    background-image: url("Trump_2016.svg.png");
+    background-image: url("backround.png");
     position: fixed;
     top: 50%;
     left: 0%;
