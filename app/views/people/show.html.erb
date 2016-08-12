@@ -1,7 +1,7 @@
 <div class="row">
   <div class= "columns large-6">
-<%= image_tag("trump.gif", size: "600x600", :id => "image1") %>
-<%= audio_tag("welcome.m4a", autoplay: true, controls: false, class: "myAudio1") %>
+<%= image_tag("trump_final.png", size: "600x600", :id => "image1") %>
+<%= audio_tag("welcome.m4a", autoplay: false, controls: false, class: "myAudio1") %>
 <%= audio_tag("bowel.m4a", autoplay: false, controls: false, class: "myAudio2") %>
 <%= audio_tag("schoolgirl.m4a", autoplay: false, controls: false, class: "myAudio3") %>
 <%= audio_tag("bang_hilary.m4a", autoplay: false, controls: false, class: "myAudio4") %>
@@ -35,10 +35,13 @@
 </div>
 
 <div class="columns large-6">
+  <br>
+  <br>
+  <br>
  <h3 class="gold">
   <center>WANT TO KNOW WHAT TRUMP THINKS OF YOU?</center></h3>
 
-   <center><button id="try_again" class="button" type="button" name="button">Try Again </button></center>
+   <center><button id="try_again" class="button" type="button" name="button">TRY AGAIN! </button></center>
  
 </div>
 </div>
@@ -95,16 +98,16 @@ function playJoke1(){
 setTimeout(function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[1].play();
-}, 3000);
+}, 5000);
 
 setTimeout(function(){ 
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 4500);
+}, 10000);
 
 
 setTimeout(function(){ 
  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-}, 6500);
+}, 7000);
 
 
 }
@@ -118,11 +121,11 @@ document.getElementsByTagName("audio")[2].play();
 }, 3000);
 
 setTimeout(function(){ 
-responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");}, 9000);
+responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");}, 13000);
 
 setTimeout(function(){ 
  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-}, 10500);
+}, 11000);
 
 }
 
@@ -135,24 +138,24 @@ document.getElementsByTagName("audio")[3].play();
 }, 3000);
 setTimeout(  function(){ 
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 7000);
+}, 10000);
 
 setTimeout(function(){ 
  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-}, 7000);
+}, 8000);
 
 
 
 setTimeout(  function(){ 
  $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
   document.getElementsByTagName("audio")[4].play();
-}, 9000);
+}, 14000);
 
 
 
 setTimeout(function(){ 
  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-}, 11000);
+}, 16000);
 
 }
 
@@ -167,7 +170,7 @@ setTimeout(  function(){
 
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-}, 7000);
+}, 10000);
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
@@ -183,7 +186,7 @@ document.getElementsByTagName("audio")[6].play();
 }, 3000);
 setTimeout(  function(){ 
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 5000);
+}, 8000);
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
@@ -198,7 +201,7 @@ document.getElementsByTagName("audio")[7].play();
 }, 3000);
 setTimeout(  function(){ 
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 7000);
+}, 10000);
 
 
 setTimeout(  function(){ 
@@ -231,11 +234,18 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[9].play();
 }, 3000);
+
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+
+}, 7000);
+
+setTimeout(  function(){ 
+
 responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
 
-}, 6000);
+}, 10000);
 }
 
 
@@ -249,7 +259,7 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-}, 6000);
+}, 8000);
 }
 
 
@@ -263,13 +273,13 @@ responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US Engli
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[11].play();
-}, 6000);
+}, 9000);
 
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-}, 10000);
+}, 13000);
 
 
 }
@@ -280,11 +290,20 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[12].play();
 }, 3000);
+
+
+
+setTimeout(  function(){ 
+
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+r
+}, 9000);
+
 setTimeout(  function(){ 
 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 7000);
+}, 11000);
 }
 
 
@@ -293,10 +312,16 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[13].play();
 }, 3000);
+
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+
+}, 5000);
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 5000);
+}, 11000);
 }
 
 
@@ -308,12 +333,12 @@ responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US Engli
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[14].play();
-}, 5000);
+}, 8000);
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-}, 8000);
+}, 11000);
 
 }
 
@@ -324,20 +349,29 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[15].play();
 }, 3000);
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 5500);
+
+
+setTimeout(  function(){ 
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 4000);
+}, 7000);
+
+
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[16].play();
-}, 8000);
+}, 13000);
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-}, 13000);
+}, 19000);
 }
+
 
 
 
@@ -346,10 +380,16 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[17].play();
 }, 3000);
+
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+}, 6000);
+
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 6000);
+}, 9000);
 }
 
 
@@ -359,17 +399,28 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 }, 3000);
+
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[18].play();
-}, 5000);
+}, 9000);
+
+
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-}, 8000);
+}, 12000);
 
 }
+
+
+
+
+
+
+
 
 
 function playJoke17(){
@@ -378,10 +429,16 @@ $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[19].play();
 
 }, 3000);
+
+setTimeout(  function(){ 
+$('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+
+}, 9000);
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
-}, 9000);
+}, 13000);
 }
 
 
@@ -391,28 +448,33 @@ $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[20].play();
 
 }, 3000);
+
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
+
 }, 6000);
 
+
+
+setTimeout(  function(){ 
+responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
+}, 9000);
+
+
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[21].play();
 
-}, 8000);
+}, 14000);
 
-setTimeout(  function(){ 
-$('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
-document.getElementsByTagName("audio")[21].play();
 
-}, 10000);
 
 
 setTimeout(  function(){ 
 $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-}, 13000);
+}, 16000);
 
 
 
@@ -429,7 +491,7 @@ setTimeout(  function(){
   $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
   document.getElementsByTagName("audio")[22].play();
 
-}, 6000);
+}, 9000);
 
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
@@ -451,11 +513,18 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[24].play();
 }, 3000);
+
+setTimeout(  function(){ 
+   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+
+}, 15000);
+
+
 setTimeout(  function(){ 
    $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
   responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-}, 14000);
+}, 18000);
 }
 
 
@@ -464,22 +533,30 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
 document.getElementsByTagName("audio")[25].play();
 }, 3000);
+
+
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+
+}, 5000);
+
+
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
   responsiveVoice.speak(document.getElementById("nametag").dataset.name + "'s", "US English Male");
 
-}, 5000);
+}, 8000);
 
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" );
   document.getElementsByTagName("audio")[26].play();
-}, 7000);
+}, 13000);
 
 
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
 
-}, 11000);
+}, 17000);
 
 
 }
@@ -490,11 +567,19 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
 document.getElementsByTagName("audio")[27].play();
 }, 3000);
+
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+ 
+
+}, 10000);
+
+
+
+setTimeout(  function(){ 
   responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-}, 9000);
+}, 13000);
 }
 
 
@@ -505,18 +590,29 @@ document.getElementsByTagName("audio")[28].play();
 }, 3000);
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-  responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+  
 
 }, 5000);
 
 setTimeout(  function(){ 
+  
+  responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
+
+}, 8000);
+
+
+
+
+
+
+setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
   document.getElementsByTagName("audio")[14].play();
-}, 8000);
+}, 12000);
 
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
-}, 10000);
+}, 16000);
 
 }
 
@@ -525,11 +621,21 @@ setTimeout(  function(){
 $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
 document.getElementsByTagName("audio")[29].play();
 }, 3000);
+
+
+setTimeout(  function(){ 
+  $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
+ 
+
+}, 6000);
+
+
+
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" );
   responsiveVoice.speak(document.getElementById("nametag").dataset.name, "US English Male");
 
-}, 5000);
+}, 8000);
 }
 
 
@@ -545,14 +651,14 @@ setTimeout(  function(){
   $('#image1').attr( "src" , "<%= image_path "trump.gif", :id => "image1" %>" ); 
   document.getElementsByTagName("audio")[23].play();
 
-}, 6000);
+}, 9000);
 
 
 setTimeout(  function(){ 
   $('#image1').attr( "src" , "<%= image_path "trump_final.png", :id => "image1" %>" ); 
   
 
-}, 9000);
+}, 13000);
 }
 
 
